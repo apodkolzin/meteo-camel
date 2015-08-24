@@ -1,0 +1,55 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Camel :: Example :: Meteo 0.0.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> camel-maven-plugin:2.12.2:run (default-cli) @ meteo >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ meteo ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ meteo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ meteo ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/apodkolzin-mint/omega/meteo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ meteo ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< camel-maven-plugin:2.12.2:run (default-cli) @ meteo <<<
+[INFO] 
+[INFO] --- camel-maven-plugin:2.12.2:run (default-cli) @ meteo ---
+[INFO] Using org.apache.camel.spring.Main to initiate a CamelContext
+2014-02-11 13:19:59,194 [ing.Main.main()] INFO  MainSupport                    - Apache Camel 2.12.2 starting
+2014-02-11 13:19:59,245 [ing.Main.main()] INFO  ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@543d5b55: startup date [Tue Feb 11 13:19:59 MSK 2014]; root of context hierarchy
+2014-02-11 13:19:59,287 [ing.Main.main()] INFO  XmlBeanDefinitionReader        - Loading XML bean definitions from file [/home/apodkolzin-mint/omega/meteo/target/classes/META-INF/spring/camel-context.xml]
+2014-02-11 13:20:00,150 [ing.Main.main()] INFO  DefaultListableBeanFactory     - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@413efaf2: defining beans [properties,template,consumerTemplate,camel:beanPostProcessor,camel,myRouteBuilder]; root of factory hierarchy
+2014-02-11 13:20:00,449 [ing.Main.main()] INFO  SpringCamelContext             - Apache Camel 2.12.2 (CamelContext: camel) is starting
+2014-02-11 13:20:00,450 [ing.Main.main()] INFO  ManagedManagementStrategy      - JMX is enabled
+2014-02-11 13:20:00,587 [ing.Main.main()] INFO  DefaultTypeConverter           - Loaded 189 type converters
+2014-02-11 13:20:00,746 [ing.Main.main()] WARN  JpaComponent                   - No EntityManagerFactory has been configured on this JpaComponent. Each JpaEndpoint will auto create their own EntityManagerFactory.
+2014-02-11 13:20:00,746 [ing.Main.main()] WARN  JpaComponent                   - No TransactionManager has been configured on this JpaComponent. Each JpaEndpoint will auto create their own JpaTransactionManager.
+2014-02-11 13:20:00,752 [ing.Main.main()] INFO  SpringCamelContext             - StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+2014-02-11 13:20:00,771 [ing.Main.main()] INFO  LocalEntityManagerFactoryBean  - Building JPA EntityManagerFactory for persistence unit 'meteo'
+2014-02-11 13:20:00,897 [ing.Main.main()] INFO  Version                        - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+2014-02-11 13:20:00,902 [ing.Main.main()] INFO  Version                        - HHH000412: Hibernate Core {4.2.7.Final}
+2014-02-11 13:20:00,903 [ing.Main.main()] INFO  Environment                    - HHH000206: hibernate.properties not found
+2014-02-11 13:20:00,905 [ing.Main.main()] INFO  Environment                    - HHH000021: Bytecode provider name : javassist
+2014-02-11 13:20:01,037 [ing.Main.main()] INFO  rManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2014-02-11 13:20:01,041 [ing.Main.main()] INFO  rManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+2014-02-11 13:20:01,041 [ing.Main.main()] INFO  rManagerConnectionProviderImpl - HHH000006: Autocommit mode: true
+2014-02-11 13:20:01,041 [ing.Main.main()] INFO  rManagerConnectionProviderImpl - HHH000401: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://192.168.212.10:5432/meteo]
+2014-02-11 13:20:01,041 [ing.Main.main()] INFO  rManagerConnectionProviderImpl - HHH000046: Connection properties: {user=postgres, password=****, autocommit=true, release_mode=auto}
+2014-02-11 13:20:01,301 [ing.Main.main()] INFO  Dialect                        - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2014-02-11 13:20:01,350 [ing.Main.main()] INFO  LobCreatorBuilder              - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2014-02-11 13:20:01,483 [ing.Main.main()] INFO  TransactionFactoryInitiator    - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2014-02-11 13:20:01,487 [ing.Main.main()] INFO  ASTQueryTranslatorFactory      - HHH000397: Using ASTQueryTranslatorFactory
+2014-02-11 13:20:01,706 [ing.Main.main()] INFO  SchemaExport                   - HHH000227: Running hbm2ddl schema export
+2014-02-11 13:20:01,856 [ing.Main.main()] INFO  SchemaExport                   - HHH000230: Schema export complete
+2014-02-11 13:20:02,006 [ing.Main.main()] INFO  SpringCamelContext             - Route: route1 started and consuming from: Endpoint[timer://foo?delay=0&fixedRate=true&period=7200000]
+2014-02-11 13:20:02,015 [ing.Main.main()] INFO  SpringCamelContext             - Total 1 routes, of which 1 is started.
+2014-02-11 13:20:02,016 [ing.Main.main()] INFO  SpringCamelContext             - Apache Camel 2.12.2 (CamelContext: camel) started in 1.565 seconds
