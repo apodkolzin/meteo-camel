@@ -1,3 +1,5 @@
 /.idea
 /target
 pid.file
+*.log
+*.iml
